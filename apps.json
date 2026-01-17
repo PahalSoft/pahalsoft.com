@@ -1,0 +1,24 @@
+[
+  {
+    "id": "mymoneywiz",
+    "name": "MyMoneyWiz",
+    "url": "/apps/mymoneywiz",
+    "tagline": "Managing finances as easy as pie",
+    "description": "Record personal and business transactions, analyze spending reports, and manage assets effortlessly.",
+    "theme": ["#0ea5e9", "#22c55e"],
+    "features": [
+      "Track income & expenses",
+      "Daily, weekly & monthly reports",
+      "Personal & business finances",
+      "Asset & balance management"
+    ],
+    "store": {
+      "ios": "#",
+      "android": "#"
+    },
+    "screenshots": [
+      "assets/mymoneywiz/1.png",
+      "assets/mymoneywiz/2.png"
+    ]
+  }
+]
