@@ -5,12 +5,33 @@ window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 50);
 });
 
-document.getElementById('themeToggle').onclick = () => {
-  const html = document.documentElement;
-  const isDark = html.getAttribute('data-bs-theme') === 'dark';
-  html.setAttribute('data-bs-theme', isDark ? 'light' : 'dark');
-  document.getElementById('themeToggle').textContent = isDark ? '🌙' : '☀️';
+const html = document.documentElement;
+const themeToggle = document.getElementById('themeToggle');
+
+const applyTheme = (theme) => {
+  html.setAttribute('data-bs-theme', theme);
+  if (themeToggle) {
+    themeToggle.textContent = theme === 'dark' ? '🌙' : '☀️';
+  }
 };
+
+const getSystemTheme = () =>
+  window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+applyTheme(getSystemTheme());
+
+if (window.matchMedia) {
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+    applyTheme(event.matches ? 'dark' : 'light');
+  });
+}
+
+if (themeToggle) {
+  themeToggle.onclick = () => {
+    const isDark = html.getAttribute('data-bs-theme') === 'dark';
+    applyTheme(isDark ? 'light' : 'dark');
+  };
+}
 
 
 fetch('apps.json')

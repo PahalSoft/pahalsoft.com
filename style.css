@@ -459,6 +459,171 @@ footer {
 .store-badge .badge-subtitle.coming-soon {
   color: #ffd93d;
 }
+
+/* ===== MyMoneyWiz Page ===== */
+.mmw-page {
+  --mmw-ink: #e7edf5;
+  --mmw-ink-soft: #b7c4d8;
+  --mmw-accent: #27b07a;
+  --mmw-accent-dark: #1d8c62;
+  --mmw-bg: #0b111a;
+  --mmw-card: rgba(14, 22, 34, 0.9);
+  --mmw-border: rgba(231, 237, 245, 0.08);
+  --mmw-surface: #0f1622;
+  --mmw-gradient: radial-gradient(1200px 600px at 15% 10%, rgba(39, 176, 122, 0.15) 0%, #0b111a 55%, #070b11 100%);
+  --mmw-shadow: 0 12px 24px rgba(5, 10, 18, 0.45);
+  --mmw-pill-bg: rgba(231, 237, 245, 0.08);
+  background: var(--mmw-gradient);
+  color: var(--mmw-ink);
+}
+
+[data-bs-theme="light"] .mmw-page {
+  --mmw-ink: #0d1b2a;
+  --mmw-ink-soft: #24324a;
+  --mmw-accent: #1a7f5a;
+  --mmw-accent-dark: #0f5a40;
+  --mmw-bg: #f6f8fb;
+  --mmw-card: #ffffff;
+  --mmw-border: rgba(13, 27, 42, 0.08);
+  --mmw-surface: #ffffff;
+  --mmw-gradient: radial-gradient(1200px 600px at 15% 10%, #e7f2ee 0%, #f6f8fb 55%, #ffffff 100%);
+  --mmw-shadow: 0 12px 24px rgba(14, 24, 40, 0.08);
+  --mmw-pill-bg: rgba(13, 27, 42, 0.08);
+}
+
+.mmw-page .mmw-hero {
+  padding: 8rem 0 6rem;
+}
+
+.mmw-page .mmw-hero .badge {
+  background: rgba(26, 127, 90, 0.12);
+  color: var(--mmw-accent-dark);
+  border: 1px solid rgba(26, 127, 90, 0.25);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.mmw-page .mmw-title {
+  font-family: "Sora", "Inter", sans-serif;
+  font-size: clamp(2.4rem, 3vw + 1.5rem, 3.8rem);
+  line-height: 1.05;
+  color: var(--mmw-ink);
+}
+
+.mmw-page .mmw-subtitle {
+  color: var(--mmw-ink-soft);
+  font-size: 1.1rem;
+}
+
+.mmw-page .mmw-cta .btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.mmw-page .mmw-cta .btn-primary {
+  background: var(--mmw-accent);
+  border-color: var(--mmw-accent);
+  box-shadow: 0 12px 30px rgba(26, 127, 90, 0.25);
+}
+
+.mmw-page .mmw-cta .btn-outline-dark {
+  border-color: var(--mmw-border);
+  color: var(--mmw-ink);
+}
+
+.mmw-page .mmw-card {
+  background: var(--mmw-card);
+  border-radius: 24px;
+  border: 1px solid var(--mmw-border);
+  box-shadow: var(--mmw-shadow);
+}
+
+.mmw-page .mmw-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  background: var(--mmw-pill-bg);
+  color: var(--mmw-ink-soft);
+}
+
+.mmw-page .mmw-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.mmw-page .mmw-feature {
+  padding: 1.4rem;
+  border-radius: 20px;
+  background: var(--mmw-card);
+  border: 1px solid var(--mmw-border);
+}
+
+.mmw-page .mmw-feature h5 {
+  font-family: "Sora", "Inter", sans-serif;
+}
+
+.mmw-page .mmw-metrics {
+  border-top: 1px solid var(--mmw-border);
+  border-bottom: 1px solid var(--mmw-border);
+}
+
+.mmw-page .mmw-metrics strong {
+  font-size: 1.6rem;
+  display: block;
+  color: var(--mmw-ink);
+}
+
+.mmw-page .mmw-steps {
+  counter-reset: step;
+  display: grid;
+  gap: 1rem;
+}
+
+.mmw-page .mmw-step {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.2rem;
+  border-radius: 18px;
+  background: rgba(26, 127, 90, 0.12);
+}
+
+.mmw-page .mmw-step::before {
+  counter-increment: step;
+  content: counter(step);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--mmw-accent);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.mmw-page .mmw-gallery img {
+  border-radius: 18px;
+  box-shadow: 0 16px 35px rgba(5, 15, 20, 0.35);
+}
+
+.mmw-page .mmw-footer {
+  color: var(--mmw-ink-soft);
+}
+
+.mmw-page .mmw-surface {
+  background: var(--mmw-surface);
+}
+
+[data-bs-theme="dark"] .mmw-page .text-muted {
+  color: rgba(231, 237, 245, 0.65) !important;
+}
 .store-badge .badge-title {
   font-size: 1.1rem;
   font-weight: 600;
