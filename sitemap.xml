@@ -24,5 +24,23 @@
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://pahalsoft.com/apps/shabdchakra.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pahalsoft.com/legal/shabdchakra-privacy.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pahalsoft.com/legal/shabdchakra-terms.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
 

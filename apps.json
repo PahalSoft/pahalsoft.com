@@ -5,7 +5,10 @@
     "url": "/apps/mymoneywiz",
     "tagline": "Managing finances as easy as pie",
     "description": "Record personal and business transactions, analyze spending reports, and manage assets effortlessly.",
-    "theme": ["#0ea5e9", "#22c55e"],
+    "theme": [
+      "#0ea5e9",
+      "#22c55e"
+    ],
     "features": [
       "Track income & expenses",
       "Daily, weekly & monthly reports",
@@ -19,6 +22,30 @@
     "screenshots": [
       "assets/mymoneywiz/1.png",
       "assets/mymoneywiz/2.png"
+    ]
+  },
+  {
+    "id": "shabdchakra",
+    "name": "Shabd Chakra",
+    "url": "/apps/shabdchakra",
+    "tagline": "The word game that remembers what you forgot",
+    "description": "Swipe letters around the wheel to fill the grid. Behind the puzzle, spaced repetition brings back the words you are closest to forgetting.",
+    "theme": [
+      "#c98a2b",
+      "#f3c76e"
+    ],
+    "features": [
+      "900+ levels across six worlds",
+      "Spaced repetition hidden inside play",
+      "Definitions, audio and examples",
+      "Kids Mode with nothing collected"
+    ],
+    "store": {
+      "ios": "#",
+      "android": "#"
+    },
+    "screenshots": [
+      "assets/shabd-chakra/icon-512.png"
     ]
   }
 ]

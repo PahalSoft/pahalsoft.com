@@ -857,3 +857,39 @@ footer {
   transform: rotate(45deg);
   box-shadow: 0 2px 10px #0003;
 }
+
+/* ---------------------------------------------------------------------------
+   Shabd Chakra
+   ---------------------------------------------------------------------------
+   Only the palette. Every component below `.mmw-page` already reads from these
+   variables, so a second app needs a colour block rather than a second copy of
+   the layout — the page uses `class="mmw-page sc-page"` and inherits the rest.
+   Gold on near-black, matching the app's own theme and launcher icon.
+   -------------------------------------------------------------------------- */
+.sc-page {
+  --mmw-ink: #f4ece0;
+  --mmw-ink-soft: #cbbca6;
+  --mmw-accent: #d99a34;
+  --mmw-accent-dark: #a9741f;
+  --mmw-bg: #0b0906;
+  --mmw-card: rgba(24, 18, 10, 0.9);
+  --mmw-border: rgba(244, 236, 224, 0.1);
+  --mmw-surface: #120d07;
+  --mmw-gradient: radial-gradient(1200px 600px at 15% 10%, rgba(201, 138, 43, 0.22) 0%, #0b0906 55%, #07060a 100%);
+  --mmw-shadow: 0 12px 24px rgba(8, 5, 2, 0.5);
+  --mmw-pill-bg: rgba(244, 236, 224, 0.09);
+}
+
+[data-bs-theme="light"] .sc-page {
+  --mmw-ink: #2b1e0c;
+  --mmw-ink-soft: #5a4526;
+  --mmw-accent: #a9741f;
+  --mmw-accent-dark: #7d5413;
+  --mmw-bg: #fbf7f1;
+  --mmw-card: #ffffff;
+  --mmw-border: rgba(43, 30, 12, 0.1);
+  --mmw-surface: #ffffff;
+  --mmw-gradient: radial-gradient(1200px 600px at 15% 10%, #f7ead6 0%, #fbf7f1 55%, #ffffff 100%);
+  --mmw-shadow: 0 12px 24px rgba(43, 30, 12, 0.08);
+  --mmw-pill-bg: rgba(43, 30, 12, 0.07);
+}

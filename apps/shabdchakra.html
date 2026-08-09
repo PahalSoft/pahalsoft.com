@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shabd Chakra — The Word Game That Remembers What You Forgot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+        content="Shabd Chakra is a word puzzle built on spaced repetition. Swipe letters, fill the grid, and the words you struggle with come back exactly when you are about to forget them.">
+
+  <meta property="og:title" content="Shabd Chakra — A Word Game That Teaches">
+  <meta property="og:description" content="Swipe the wheel, fill the grid, and actually keep the words. Spaced repetition hidden inside a puzzle.">
+  <meta property="og:image" content="https://pahalsoft.com/assets/shabd-chakra/icon-512.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="mmw-page sc-page">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="/">
+      <img src="/assets/logo-invert.png" alt="PahalSoft" height="50">
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="../#apps">Apps</a></li>
+          <li class="nav-item"><a class="nav-link" href="../#blog">Updates</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="btn btn-sm btn-outline-light rounded-pill px-3">☀️</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="mmw-hero">
+    <div class="container" data-aos="fade-up">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge rounded-pill mb-3">शब्द चक्र · Wheel of Words</span>
+          <h1 class="mmw-title fw-bold">A word game that remembers what you forgot.</h1>
+          <p class="mmw-subtitle mt-3">
+            Swipe letters around the wheel to fill the grid. Behind the puzzle, Shabd Chakra
+            quietly tracks every word you meet — and brings the shaky ones back just before
+            they slip away.
+          </p>
+          <div class="mmw-cta d-flex flex-wrap gap-3 mt-4">
+            <a class="btn btn-outline-dark" href="#features">How it works</a>
+          </div>
+          <div class="store-badges mt-4">
+            <a target="_blank" rel="noopener noreferrer" class="store-badge ios-badge disabled" href="" aria-label="Coming soon to App Store">
+              <div class="badge-content">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="apple-logo"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"></path></svg>
+                <div class="badge-text">
+                  <span class="badge-subtitle coming-soon">Coming Soon to</span>
+                  <span class="badge-title">App Store</span>
+                </div>
+              </div>
+              <div class="coming-soon-overlay"><span>Coming Soon</span></div>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" class="store-badge android-badge disabled" href="" aria-label="Coming soon to Google Play">
+              <div class="badge-content">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="play-logo"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"></path></svg>
+                <div class="badge-text">
+                  <span class="badge-subtitle coming-soon">Coming Soon to</span>
+                  <span class="badge-title">Google Play</span>
+                </div>
+              </div>
+              <div class="coming-soon-overlay"><span>Coming Soon</span></div>
+            </a>
+          </div>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <span class="mmw-pill">Plays offline</span>
+            <span class="mmw-pill">No account needed</span>
+            <span class="mmw-pill">Kids Mode included</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mmw-card p-3">
+            <img src="../assets/shabd-chakra/icon-512.png" class="img-fluid rounded-4" alt="Shabd Chakra app icon — a wheel of letter tiles with a word traced across it">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mmw-metrics py-4">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <strong>900+ levels</strong>
+          <span class="text-muted">Across six worlds, from Village to Space</span>
+        </div>
+        <div class="col-md-4">
+          <strong>3 modes</strong>
+          <span class="text-muted">Kids, Teen and Standard, chosen by age</span>
+        </div>
+        <div class="col-md-4">
+          <strong>2 minutes</strong>
+          <span class="text-muted">A level fits in the gap you actually have</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="py-6">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-12">
+          <div class="mmw-grid">
+            <div class="mmw-feature">
+              <h5>Review you never see</h5>
+              <p class="text-muted mb-0">No flashcards, no drills. The next level is simply chosen to contain the words you are closest to forgetting.</p>
+            </div>
+            <div class="mmw-feature">
+              <h5>Every word means something</h5>
+              <p class="text-muted mb-0">Definitions, pronunciation and an example sentence for the words you meet — not just letters that happen to fit.</p>
+            </div>
+            <div class="mmw-feature">
+              <h5>Chapters and stages</h5>
+              <p class="text-muted mb-0">Ten levels to a stage, so there is always something you can finish in one sitting.</p>
+            </div>
+            <div class="mmw-feature">
+              <h5>Yours, on your device</h5>
+              <p class="text-muted mb-0">Progress is stored locally and the game works with no signal at all. Signing in is optional.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <h2 class="fw-semibold">Puzzles you enjoy. Vocabulary that stays.</h2>
+          <p class="text-muted mt-3">
+            Most word games are a pleasant way to pass time and nothing is left afterwards.
+            Shabd Chakra keeps a record of every word you have met and how well you know it,
+            then uses a proven spaced-repetition schedule to decide what to put in front of
+            you next.
+          </p>
+          <div class="mmw-steps mt-4">
+            <div class="mmw-step">
+              <div>
+                <h6 class="mb-1">Swipe</h6>
+                <p class="mb-0 text-muted">Drag across the wheel to spell a word and fill the grid.</p>
+              </div>
+            </div>
+            <div class="mmw-step">
+              <div>
+                <h6 class="mb-1">Meet</h6>
+                <p class="mb-0 text-muted">New words arrive with a meaning, not just a tick.</p>
+              </div>
+            </div>
+            <div class="mmw-step">
+              <div>
+                <h6 class="mb-1">Keep</h6>
+                <p class="mb-0 text-muted">Shaky words quietly reappear until they stick for good.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="mmw-card p-4 mt-4">
+            <h5 class="fw-semibold">My Words</h5>
+            <p class="text-muted mb-0">
+              Every word you have met, with how close it is to mastered. Search it, read the
+              definition, hear how it sounds, and see when the game plans to test you again.
+              Mastery means four correct recalls with the gaps stretched past three weeks —
+              not four right answers in a row on the same afternoon.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-6 mmw-surface">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="fw-semibold">Built so a child can play it safely.</h2>
+          <p class="text-muted mt-3">
+            Shabd Chakra asks for a date of birth once, on the device, and never sends it
+            anywhere. Under 13, the game runs in Kids Mode: no account, no cloud, no
+            analytics, no advertising, no notifications, nothing to buy and no way out to the
+            web. Those features are not hidden behind a switch — they are not built into that
+            version of the app at all.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <span class="mmw-pill">Age-appropriate content</span>
+            <span class="mmw-pill">No ads for children</span>
+            <span class="mmw-pill">Parental gate on settings</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mmw-card p-4">
+            <h5 class="fw-semibold">Three modes, one game</h5>
+            <p class="text-muted mb-2"><strong>Kids</strong> — plays entirely on the device. Nothing leaves it.</p>
+            <p class="text-muted mb-2"><strong>Teen</strong> — adds optional cloud backup so progress survives a new phone. Still no ads or tracking.</p>
+            <p class="text-muted mb-0"><strong>Standard</strong> — the full game, including reminders and the shop.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 mmw-footer">
+    <div>© 2026 PahalSoft</div>
+    <div class="d-flex justify-content-center gap-3 mt-2">
+      <a class="text-decoration-none" href="../legal/shabdchakra-privacy.html">Privacy Policy</a>
+      <span aria-hidden="true">•</span>
+      <a class="text-decoration-none" href="../legal/shabdchakra-terms.html">Terms of Service</a>
+    </div>
+  </footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="../script.js"></script>
+
+</body>
+</html>
