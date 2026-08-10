@@ -25,9 +25,9 @@
     ]
   },
   {
-    "id": "shabdchakra",
-    "name": "Shabd Chakra",
-    "url": "/apps/shabdchakra",
+    "id": "wheelofwords",
+    "name": "Wheel of Words",
+    "url": "/apps/wheelofwords",
     "tagline": "The word game that remembers what you forgot",
     "description": "Swipe letters around the wheel to fill the grid. Behind the puzzle, spaced repetition brings back the words you are closest to forgetting.",
     "theme": [
@@ -45,7 +45,7 @@
       "android": "#"
     },
     "screenshots": [
-      "assets/shabd-chakra/icon-512.png"
+      "assets/wheel-of-words/icon-512.png"
     ]
   }
 ]
