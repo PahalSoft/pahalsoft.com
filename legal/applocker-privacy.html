@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>App Locker – Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for App Locker. The app has no internet permission, collects nothing, and stores everything on your own device.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="mmw-page sc-page">
+
+<div class="container py-5">
+  <h1 class="fw-bold mb-4">Privacy Policy</h1>
+  <p class="text-muted">App Locker · Last updated: 21 August 2026</p>
+
+  <p>
+    App Locker is made by PahalSoft (“we”, “our”, “us”). This policy explains what the app
+    stores, what it does not, and why you do not have to take either claim on trust.
+  </p>
+
+  <h4 class="mt-4">1. The short version</h4>
+  <p>
+    App Locker collects nothing and sends nothing. That is not a statement of intent — the
+    app does not hold Android's <code>INTERNET</code> permission, so it has no technical
+    ability to open a network connection at all. You can confirm this from your own device's
+    settings before you ever trust us on it. See section 9.
+  </p>
+
+  <h4 class="mt-4">2. What is stored on your device</h4>
+  <p>
+    All of the following stays in App Locker's private storage, which other apps cannot read:
+  </p>
+  <ul>
+    <li><strong>Which apps you chose to protect</strong> — so it knows what to lock.</li>
+    <li><strong>A cryptographic hash of your PIN</strong> — so it can check your PIN without storing it.</li>
+    <li><strong>Your settings</strong> — auto-lock timing, whether biometric unlock is on.</li>
+    <li><strong>A count of recent failed attempts</strong> — to slow down repeated guessing.</li>
+  </ul>
+  <p>
+    <strong>Your PIN itself is never stored.</strong> What is kept is a hash produced using a
+    key held in the Android Keystore, from which the PIN cannot be recovered. If you forget
+    your PIN, nobody — including us — can retrieve it for you.
+  </p>
+
+  <h4 class="mt-4">3. What is not stored, anywhere</h4>
+  <ul>
+    <li>No record of which apps you opened, or when.</li>
+    <li>No app content, messages, passwords or screenshots.</li>
+    <li>No accessibility text from any app.</li>
+    <li>No device identifiers, advertising ID or location.</li>
+    <li>No name, email address or account of any kind.</li>
+    <li>No crash reports and no analytics.</li>
+  </ul>
+  <p>
+    There is no account to create, and no server for it to be created on.
+  </p>
+
+  <h4 class="mt-4">4. The Accessibility Service</h4>
+  <p>
+    App Locker uses Android's Accessibility Service for exactly one purpose: to notice when
+    an app comes to the foreground, so that a lock screen can be shown if it is one you chose
+    to protect.
+  </p>
+  <p>
+    The service reads only the <strong>package name</strong> of the app being opened — an
+    identifier such as <code>com.example.messaging</code>. It does not read screen contents,
+    text, notifications, or anything you type. That is a limit in how the app uses the API,
+    not a policy you are asked to trust.
+  </p>
+  <p>
+    Android shows a strongly worded warning when you enable any accessibility service,
+    because the API <em>can</em> be used to read screen content. App Locker does not use it
+    that way — and because it has no internet permission, even data it never collects would
+    have nowhere to go.
+  </p>
+
+  <h4 class="mt-4">5. Biometric unlock</h4>
+  <p>
+    If you turn on fingerprint or face unlock, the check is performed by Android itself.
+    App Locker receives only a yes-or-no answer. Your biometric data never reaches the app,
+    because Android does not expose it to apps at all.
+  </p>
+
+  <h4 class="mt-4">6. Data sharing</h4>
+  <p>
+    None. There is nobody to share with: no analytics provider, no advertising network, no
+    cloud storage, no crash reporting service, and no third-party component that transmits
+    anything.
+  </p>
+
+  <h4 class="mt-4">7. Diagnostics</h4>
+  <p>
+    App Locker can produce a short diagnostic summary that you may choose to send us when
+    asking for help. It contains only device and service status — Android version, whether
+    the accessibility service is running, and timing measurements. It contains
+    <strong>no app names and no personal data</strong>, and it is never sent anywhere unless
+    you deliberately share it yourself.
+  </p>
+
+  <h4 class="mt-4">8. Children</h4>
+  <p>
+    App Locker is not directed at children, and collects no data from anyone — including
+    children.
+  </p>
+
+  <h4 class="mt-4">9. How to verify all of this</h4>
+  <p>
+    You do not have to take our word for any of it:
+  </p>
+  <ul>
+    <li>
+      <strong>Check the permissions.</strong> Android Settings → Apps → App Locker →
+      Permissions. The only permission listed is biometric access. No internet, no storage,
+      no contacts, no camera.
+    </li>
+    <li>
+      <strong>Check the network usage.</strong> Settings → Network &amp; internet → Data
+      usage. App Locker will not appear, because it cannot make a connection.
+    </li>
+  </ul>
+  <p>
+    An app without the internet permission cannot open a network connection. Android enforces
+    that at the system level — it is not something the app chooses to honour.
+  </p>
+
+  <h4 class="mt-4">10. Deleting your data</h4>
+  <p>
+    Uninstalling App Locker removes everything it stored. There is no residue, because there
+    was never a copy anywhere else. You can also clear it at any time from Android Settings →
+    Apps → App Locker → Storage.
+  </p>
+
+  <h4 class="mt-4">11. What App Locker does not protect against</h4>
+  <p>
+    This belongs in a privacy policy because overstating it would be the dishonest part.
+    App Locker deters someone casually picking up your unlocked phone. It is not protection
+    against someone with time, technical skill and physical access to your device: anyone who
+    can reach Android's own settings can disable App Locker, and anyone who can uninstall apps
+    can remove it. It does not encrypt your files, and it is not a replacement for your
+    device's lock screen.
+  </p>
+
+  <h4 class="mt-4">12. Changes to this policy</h4>
+  <p>
+    If this policy ever changes, it will be because the app changed. Our rule is that the
+    statements above must remain literally true — a change that would make any of them false
+    does not ship. Updates are posted on this page with a new date at the top.
+  </p>
+
+  <h4 class="mt-4">13. Contact us</h4>
+  <p>
+    Questions about this policy:
+    <br>
+    <strong>Email:</strong> lokeshpahal@gmail.com
+  </p>
+
+  <hr class="my-5">
+  <p class="text-muted small">
+    © 2026 PahalSoft. All rights reserved.
+  </p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="../script.js"></script>
+
+</body>
+</html>

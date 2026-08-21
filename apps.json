@@ -47,5 +47,28 @@
     "screenshots": [
       "assets/wheel-of-words/icon-512.png"
     ]
+  },
+  {
+    "id": "applocker",
+    "name": "App Locker",
+    "url": "/apps/applocker",
+    "tagline": "Hand over your phone, not everything on it",
+    "description": "Put a PIN or fingerprint in front of the apps you would rather other people did not open. No internet permission, so nothing can leave your device.",
+    "theme": [
+      "#1B3A5C",
+      "#5A6C9B"
+    ],
+    "features": [
+      "Lock any app with a PIN",
+      "Fingerprint unlock",
+      "Works entirely offline",
+      "No account, nothing collected"
+    ],
+    "store": {
+      "android": "#"
+    },
+    "screenshots": [
+      "assets/app-locker/icon-512.png"
+    ]
   }
 ]

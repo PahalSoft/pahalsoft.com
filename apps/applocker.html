@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>App Locker — Lock Individual Apps With a PIN or Fingerprint</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+        content="App Locker puts a PIN or fingerprint in front of the apps you would rather other people did not open. No internet permission, no account, nothing collected.">
+
+  <meta property="og:title" content="App Locker — Hand Over Your Phone, Not Everything On It">
+  <meta property="og:description" content="Lock chosen apps behind a PIN or fingerprint. No internet permission, so nothing can leave your phone.">
+  <meta property="og:image" content="https://pahalsoft.com/assets/app-locker/icon-512.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="mmw-page sc-page">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="/">
+      <img src="/assets/logo-invert.png" alt="PahalSoft" height="50">
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="../#apps">Apps</a></li>
+          <li class="nav-item"><a class="nav-link" href="../#blog">Updates</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="btn btn-sm btn-outline-light rounded-pill px-3">☀️</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="mmw-hero">
+    <div class="container" data-aos="fade-up">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge rounded-pill mb-3">Privacy, on your own device</span>
+          <h1 class="mmw-title fw-bold">Hand over your phone. Not everything on it.</h1>
+          <p class="mmw-subtitle mt-3">
+            App Locker puts a PIN or fingerprint in front of the apps you would rather other
+            people did not open. It works entirely offline — not as a setting you switch on,
+            but because the app has no permission to reach the internet at all.
+          </p>
+          <div class="mmw-cta d-flex flex-wrap gap-3 mt-4">
+            <a class="btn btn-outline-dark" href="#features">How it works</a>
+          </div>
+          <div class="store-badges mt-4">
+            <a target="_blank" rel="noopener noreferrer" class="store-badge android-badge disabled" href="" aria-label="Coming soon to Google Play">
+              <div class="badge-content">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="play-logo"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"></path></svg>
+                <div class="badge-text">
+                  <span class="badge-subtitle coming-soon">Coming Soon to</span>
+                  <span class="badge-title">Google Play</span>
+                </div>
+              </div>
+              <div class="coming-soon-overlay"><span>Coming Soon</span></div>
+            </a>
+          </div>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <span class="mmw-pill">Works offline</span>
+            <span class="mmw-pill">No account needed</span>
+            <span class="mmw-pill">Nothing collected</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mmw-card p-3">
+            <img src="../assets/app-locker/icon-512.png" class="img-fluid rounded-4" alt="App Locker app icon — a white padlock on a deep blue field">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mmw-metrics py-4">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <strong>1 permission</strong>
+          <span class="text-muted">Biometric access. That is the whole list</span>
+        </div>
+        <div class="col-md-4">
+          <strong>0 bytes sent</strong>
+          <span class="text-muted">No internet permission, so no connection is possible</span>
+        </div>
+        <div class="col-md-4">
+          <strong>Under 4 MB</strong>
+          <span class="text-muted">Small enough that you will not notice it</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="py-6">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-12">
+          <div class="mmw-grid">
+            <div class="mmw-feature">
+              <h5>Pick the apps that matter</h5>
+              <p class="text-muted mb-0">Choose any app on your phone. The rest open exactly as they always did — App Locker stays out of the way.</p>
+            </div>
+            <div class="mmw-feature">
+              <h5>PIN or fingerprint</h5>
+              <p class="text-muted mb-0">A four to six digit PIN, or your fingerprint if the device supports it. The PIN is the fallback that always works.</p>
+            </div>
+            <div class="mmw-feature">
+              <h5>Locks again on your terms</h5>
+              <p class="text-muted mb-0">Decide whether a protected app re-locks the moment you leave it, or after a short grace period.</p>
+            </div>
+            <div class="mmw-feature">
+              <h5>Guessing gets slower</h5>
+              <p class="text-muted mb-0">Repeated wrong entries are progressively delayed, so someone cannot simply work through every combination.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <h2 class="fw-semibold">Offline is not a feature. It is the architecture.</h2>
+          <p class="text-muted mt-3">
+            Plenty of apps promise they do not collect your data. App Locker is built so that
+            it could not, even if it wanted to: it does not request Android's internet
+            permission, and an app without that permission cannot open a network connection.
+            Android enforces that, not us.
+          </p>
+          <div class="mmw-steps mt-4">
+            <div class="mmw-step">
+              <div>
+                <h6 class="mb-1">Choose</h6>
+                <p class="mb-0 text-muted">Tick the apps you want behind a lock.</p>
+              </div>
+            </div>
+            <div class="mmw-step">
+              <div>
+                <h6 class="mb-1">Open</h6>
+                <p class="mb-0 text-muted">A locked app asks for your PIN or fingerprint first.</p>
+              </div>
+            </div>
+            <div class="mmw-step">
+              <div>
+                <h6 class="mb-1">Carry on</h6>
+                <p class="mb-0 text-muted">Everything else on the phone behaves normally.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="mmw-card p-4 mt-4">
+            <h5 class="fw-semibold">Check it yourself</h5>
+            <p class="text-muted mb-0">
+              You do not have to take any of this on trust. Open Android Settings → Apps →
+              App Locker → Permissions and you will find one entry: biometric access. No
+              internet, no storage, no contacts, no camera. Look under Data usage and App
+              Locker will not appear at all, because it has never made a connection.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-6 mmw-surface">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="fw-semibold">About that Accessibility permission.</h2>
+          <p class="text-muted mt-3">
+            App Locker needs Android's Accessibility Service, and Android will show you a
+            strongly worded warning when you enable it. That warning is fair: the API
+            <em>can</em> be used to read everything on screen.
+          </p>
+          <p class="text-muted">
+            App Locker uses it for one thing. When an app comes to the foreground, the service
+            reads that app's identifier — something like <code>com.example.messaging</code> —
+            and nothing else. No screen contents, no text, no notifications, nothing you type.
+            And with no internet permission, anything it did read would have nowhere to go.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <span class="mmw-pill">Explained before you enable it</span>
+            <span class="mmw-pill">Package name only</span>
+            <span class="mmw-pill">Turn it off any time</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mmw-card p-4">
+            <h5 class="fw-semibold">What this protects against — and what it does not</h5>
+            <p class="text-muted mb-2">
+              App Locker is built for an ordinary situation: someone picks up your unlocked
+              phone, or you hand it to them, and you would rather they did not open certain
+              apps. It is good at that.
+            </p>
+            <p class="text-muted mb-0">
+              It is not protection against someone with time, skill and physical access to
+              your device. Anyone who reaches Android's own settings can switch App Locker
+              off, and anyone who can uninstall apps can remove it. It does not encrypt your
+              files, and it does not replace your device's lock screen. An app in this
+              category that claims otherwise is not being straight with you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 mmw-footer">
+    <div>© 2026 PahalSoft</div>
+    <div class="d-flex justify-content-center gap-3 mt-2">
+      <a class="text-decoration-none" href="../legal/applocker-privacy.html">Privacy Policy</a>
+      <span aria-hidden="true">•</span>
+      <a class="text-decoration-none" href="../legal/applocker-terms.html">Terms of Service</a>
+    </div>
+  </footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="../script.js"></script>
+
+</body>
+</html>
