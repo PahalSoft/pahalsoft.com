@@ -1,15 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="512" height="512"
-     role="img" aria-label="App Locker icon — a white padlock on a deep blue field">
-  <!-- Traced from the app's own adaptive icon: ic_launcher_background (#1B3A5C)
-       plus the paths in drawable/ic_launcher_foreground.xml, unchanged. -->
-  <rect width="108" height="108" rx="24" fill="#1B3A5C"/>
-  <!-- Padlock shackle -->
-  <path d="M44,46 L44,40 A10,10 0 0,1 64,40 L64,46"
-        fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
-  <!-- Padlock body -->
-  <path d="M38,46 L70,46 A4,4 0 0,1 74,50 L74,70 A4,4 0 0,1 70,74 L38,74 A4,4 0 0,1 34,70 L34,50 A4,4 0 0,1 38,46 Z"
-        fill="#FFFFFF"/>
-  <!-- Keyhole -->
-  <path d="M54,54 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" fill="#1B3A5C"/>
-  <path d="M52,58 L56,58 L57,67 L51,67 Z" fill="#1B3A5C"/>
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="App Locker icon — a padlock inside a shield" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1D57C8"/><stop offset="55%" stop-color="#123A8F"/><stop offset="100%" stop-color="#0A1E4F"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.32" cy="0.22" r="0.75">
+      <stop offset="0%" stop-color="#5C9CFF" stop-opacity="0.45"/><stop offset="100%" stop-color="#5C9CFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7FC0FF"/><stop offset="50%" stop-color="#2E7BE8"/><stop offset="100%" stop-color="#7FC0FF"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#2B62D6"/><stop offset="55%" stop-color="#12357F"/><stop offset="100%" stop-color="#0B2158"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EAF2FF"/><stop offset="45%" stop-color="#9FB9DF"/><stop offset="100%" stop-color="#D6E4F8"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#FBFCFE"/><stop offset="45%" stop-color="#DCE3ED"/>
+      <stop offset="72%" stop-color="#AEB9C9"/><stop offset="100%" stop-color="#E6EBF3"/>
+    </linearGradient>
+    <linearGradient id="shackle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F4F7FB"/><stop offset="100%" stop-color="#9AA6B8"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.34"/><stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="112" fill="url(#glow)"/>
+
+  <!-- Abstract app tiles. -->
+  <g>
+    <g transform="translate(96,150) rotate(-20)"><rect x="-30" y="-30" width="60" height="60" rx="17" fill="#3AA8F0"/><rect x="-30" y="-30" width="60" height="60" rx="17" fill="url(#gloss)"/></g>
+    <g transform="translate(160,108) rotate(-12)"><rect x="-32" y="-32" width="64" height="64" rx="18" fill="#B54FD0"/><rect x="-32" y="-32" width="64" height="64" rx="18" fill="url(#gloss)"/></g>
+    <g transform="translate(256,86)"><rect x="-34" y="-34" width="68" height="68" rx="19" fill="#33C06B"/><rect x="-34" y="-34" width="68" height="68" rx="19" fill="url(#gloss)"/></g>
+    <g transform="translate(352,108) rotate(12)"><rect x="-32" y="-32" width="64" height="64" rx="18" fill="#E8484B"/><rect x="-32" y="-32" width="64" height="64" rx="18" fill="url(#gloss)"/></g>
+    <g transform="translate(416,150) rotate(20)"><rect x="-30" y="-30" width="60" height="60" rx="17" fill="#3F7BF5"/><rect x="-30" y="-30" width="60" height="60" rx="17" fill="url(#gloss)"/></g>
+  </g>
+
+  <ellipse cx="256" cy="322" rx="196" ry="86" fill="none" stroke="url(#ring)" stroke-width="20" opacity="0.9" transform="rotate(-14 256 322)"/>
+
+  <path d="M256 104 L404 152 L404 286 C404 366 336 414 256 442 C176 414 108 366 108 286 L108 152 Z" fill="url(#rim)"/>
+  <path d="M256 128 L382 168 L382 286 C382 352 326 393 256 418 C186 393 130 352 130 286 L130 168 Z" fill="url(#face)"/>
+  <path d="M256 128 L382 168 L382 232 C330 252 182 252 130 232 L130 168 Z" fill="url(#gloss)"/>
+
+  <path d="M78 356 C140 424 372 424 434 356" fill="none" stroke="url(#ring)" stroke-width="20" stroke-linecap="round" opacity="0.95"/>
+
+  <path d="M214 250 L214 214 A42 42 0 0 1 298 214 L298 250" fill="none" stroke="url(#shackle)" stroke-width="26" stroke-linecap="round"/>
+  <rect x="182" y="246" width="148" height="122" rx="26" fill="url(#metal)"/>
+  <rect x="182" y="246" width="148" height="52" rx="24" fill="url(#gloss)"/>
+  <circle cx="256" cy="296" r="17" fill="#12357F"/>
+  <path d="M248 310 L264 310 L269 344 L243 344 Z" fill="#12357F"/>
 </svg>
