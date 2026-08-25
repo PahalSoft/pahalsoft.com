@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timisha — Edit Photos On Your Phone, Not On Someone's Server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+        content="Timisha is a photo editor that runs entirely on your device. Masks, curves and full-resolution export, with your original file never changed and your photos never uploaded.">
+
+  <meta property="og:title" content="Timisha — Edit Photos On Your Phone, Not On Someone's Server">
+  <meta property="og:description" content="Masks, curves and full-resolution export. Photos are edited on the device and never uploaded, and your original file is never changed.">
+  <meta property="og:image" content="https://pahalsoft.com/assets/timisha/icon-512.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="mmw-page sc-page">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="/">
+      <img src="/assets/logo-invert.png" alt="PahalSoft" height="50">
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="../#apps">Apps</a></li>
+          <li class="nav-item"><a class="nav-link" href="../#blog">Updates</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="btn btn-sm btn-outline-light rounded-pill px-3">☀️</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="mmw-hero">
+    <div class="container" data-aos="fade-up">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge rounded-pill mb-3">Editing, on your own device</span>
+          <h1 class="mmw-title fw-bold">Your photos never leave your phone.</h1>
+          <p class="mmw-subtitle mt-3">
+            Timisha edits photographs on the device itself — no upload, no account, no queue
+            waiting on a server somewhere. Your original file is never written to, so any
+            edit can be undone or thrown away weeks later.
+          </p>
+          <div class="mmw-cta d-flex flex-wrap gap-3 mt-4">
+            <a class="btn btn-outline-dark" href="#features">What it does</a>
+          </div>
+          <div class="store-badges mt-4">
+            <a target="_blank" rel="noopener noreferrer" class="store-badge android-badge disabled" href="" aria-label="Coming soon to Google Play">
+              <div class="badge-content">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="play-logo"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"></path></svg>
+                <div class="badge-text">
+                  <span class="badge-subtitle coming-soon">Coming Soon to</span>
+                  <span class="badge-title">Google Play</span>
+                </div>
+              </div>
+              <div class="coming-soon-overlay"><span>Coming Soon</span></div>
+            </a>
+          </div>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <span class="mmw-pill">Photos never uploaded</span>
+            <span class="mmw-pill">No account needed</span>
+            <span class="mmw-pill">Originals never changed</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mmw-card p-3">
+            <img src="../assets/timisha/icon-512.png" class="img-fluid rounded-4" alt="Timisha app icon — a photograph of a hillside with an adjustment slider across it">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mmw-metrics py-4">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <strong>0 photos uploaded</strong>
+          <span class="text-muted">Every edit is computed on your own device</span>
+        </div>
+        <div class="col-md-4">
+          <strong>Original untouched</strong>
+          <span class="text-muted">Edits are stored separately and can always be undone</span>
+        </div>
+        <div class="col-md-4">
+          <strong>Full resolution, free</strong>
+          <span class="text-muted">No watermark and no downscaling, ever</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="py-6">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-12">
+          <div class="mmw-grid">
+            <div class="mmw-feature">
+              <h5>Edit one part at a time</h5>
+              <p class="text-muted mb-0">Brighten a sky without touching the people under it. Brush a mask in by hand, place a gradient, pick a range of colours, or let the app find the subject for you.</p>
+            </div>
+            <div class="mmw-feature">
+              <h5>Light and colour</h5>
+              <p class="text-muted mb-0">Sixteen adjustments from exposure and contrast to texture and dehaze, with tone curves and per-colour hue and saturation when you want to be precise.</p>
+            </div>
+            <div class="mmw-feature">
+              <h5>Crop that stays honest</h5>
+              <p class="text-muted mb-0">Straighten and rotate with the frame pulled in automatically, so a levelled horizon never leaves an empty corner in the exported file.</p>
+            </div>
+            <div class="mmw-feature">
+              <h5>Nothing is final</h5>
+              <p class="text-muted mb-0">Every edit is a step you can walk back. Reopen a photo weeks later and the whole history is still there, because none of it was ever applied to the original.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <h2 class="fw-semibold">On-device is not a setting. It is where the work happens.</h2>
+          <p class="text-muted mt-3">
+            Plenty of editors send your picture to a server, do the work there, and send a
+            result back. Timisha does the work on your phone's own graphics hardware. There
+            is no upload step to opt out of, because there is no upload.
+          </p>
+          <div class="mmw-steps mt-4">
+            <div class="mmw-step">
+              <div>
+                <h6 class="mb-1">Open</h6>
+                <p class="mb-0 text-muted">Pick a photo from your library, or hand over just one.</p>
+              </div>
+            </div>
+            <div class="mmw-step">
+              <div>
+                <h6 class="mb-1">Edit</h6>
+                <p class="mb-0 text-muted">Adjust the whole picture, or mask a part and adjust only that.</p>
+              </div>
+            </div>
+            <div class="mmw-step">
+              <div>
+                <h6 class="mb-1">Export</h6>
+                <p class="mb-0 text-muted">A new file at full resolution. The original stays exactly as it was.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="mmw-card p-4 mt-4">
+            <h5 class="fw-semibold">About the internet permission</h5>
+            <p class="text-muted mb-2">
+              Timisha does hold Android's internet permission, and we would rather say so
+              here than have you find it in the app listing and wonder. It arrives with
+              Google's billing library, which is how a purchase is verified.
+            </p>
+            <p class="text-muted mb-0">
+              Your photographs are not part of that. They are decoded, edited and exported
+              entirely on the device, and no part of the app sends image data anywhere. If a
+              future version ever needed to, it would say so before doing it — not in a
+              policy update after the fact.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-6 mmw-surface">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="fw-semibold">Free, and what Pro adds.</h2>
+          <p class="text-muted mt-3">
+            The everyday work is free and stays free: all sixteen adjustments, crop and
+            straighten, auto-tone, the built-in looks, unlimited undo, and export at full
+            resolution with no watermark. An editor that cannot give you your photo back is
+            not an editor.
+          </p>
+          <p class="text-muted">
+            Pro is one purchase, not a subscription. It removes the ceilings — unlimited
+            masks instead of two per photo, selection by colour and tone, per-channel curves,
+            per-colour adjustment, sharpening and noise reduction, and the other export
+            formats.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <span class="mmw-pill">One-time purchase</span>
+            <span class="mmw-pill">No subscription</span>
+            <span class="mmw-pill">No watermark, free or paid</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mmw-card p-4">
+            <h5 class="fw-semibold">What it is good at — and what it is not</h5>
+            <p class="text-muted mb-2">
+              Timisha is built for finishing a photograph you already have: correcting light
+              and colour, working on one part of the frame without disturbing the rest, and
+              getting a full-quality file back out. It is good at that.
+            </p>
+            <p class="text-muted mb-0">
+              It is not a compositor and it does not generate imagery. It will not remove an
+              object, replace a sky with one that was never there, or invent detail that the
+              sensor did not record. Automatic subject selection is a starting point you then
+              refine by hand, not a promise that the machine always gets it right — and when
+              it does not, every parameter behind it is yours to adjust.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 mmw-footer">
+    <div>© 2026 PahalSoft</div>
+    <div class="d-flex justify-content-center gap-3 mt-2">
+      <a class="text-decoration-none" href="../legal/timisha-privacy.html">Privacy Policy</a>
+      <span aria-hidden="true">•</span>
+      <a class="text-decoration-none" href="../legal/timisha-terms.html">Terms of Service</a>
+    </div>
+  </footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="../script.js"></script>
+
+</body>
+</html>

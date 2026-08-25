@@ -70,5 +70,28 @@
     "screenshots": [
       "assets/app-locker/icon-512.png"
     ]
+  },
+  {
+    "id": "timisha",
+    "name": "Timisha",
+    "url": "/apps/timisha",
+    "tagline": "Your photos never leave your phone",
+    "description": "Edit photographs on the device itself. Masks, curves and full-resolution export, with your original file never changed.",
+    "theme": [
+      "#3A7BFF",
+      "#1E9E8A"
+    ],
+    "features": [
+      "Edit one part without touching the rest",
+      "Sixteen adjustments, curves and per-colour control",
+      "Originals never changed, everything undoable",
+      "Full-resolution export, no watermark"
+    ],
+    "store": {
+      "android": "#"
+    },
+    "screenshots": [
+      "assets/timisha/icon-512.png"
+    ]
   }
 ]
