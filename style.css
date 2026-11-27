@@ -1090,3 +1090,60 @@ footer {
   background: transparent;
   color: var(--mmw-accent);
 }
+
+/* ===== Home: mobile and desktop ===== */
+.mt-6 { margin-top: 4.5rem; }
+
+.home-platform {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 16px;
+  margin: -0.6rem;
+  padding: 0.6rem;
+  transition: background 0.2s ease;
+}
+
+.home-platform:hover { background: rgba(255, 255, 255, 0.04); color: inherit; }
+[data-bs-theme="light"] .home-platform:hover { background: rgba(0, 0, 0, 0.04); }
+
+.home-platform-icon { font-size: 1.6rem; line-height: 1.2; }
+
+.home-hero-item h5 small {
+  margin-left: 0.4rem;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.home-hero-item.home-platform + .home-hero-item { margin-top: 1.5rem; }
+
+.home-platform-head {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+  scroll-margin-top: 120px;
+}
+
+.home-platform-head p { color: var(--text-muted); }
+
+.platform-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.75rem; }
+
+.platform-chip {
+  display: inline-block;
+  padding: 0.15rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.platform-chip.is-free { border-color: rgba(63, 183, 122, 0.5); color: #3fb77a; }
+
+.store-badge.desktop-badge { background: #e95420; color: #fff; }
+.store-badge.desktop-badge:hover { background: #c7461b; color: #fff; transform: translateY(-2px); }
+.store-badge .ubuntu-logo { width: 28px; height: 28px; flex-shrink: 0; }

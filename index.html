@@ -2,16 +2,16 @@
 <html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <title>PahalSoft — Mobile Apps Crafted with Care</title>
+  <title>PahalSoft — Focused Apps for Your Phone and Your Desktop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- SEO -->
-  <meta name="description" content="PahalSoft is an independent mobile app studio crafting simple, reliable apps that improve everyday life.">
+  <meta name="description" content="PahalSoft is an independent software studio making focused, private apps for Android, iOS and the Ubuntu desktop.">
   <meta name="author" content="PahalSoft">
 
   <!-- OpenGraph -->
-  <meta property="og:title" content="PahalSoft — Mobile Apps Crafted with Care">
-  <meta property="og:description" content="Clean, thoughtful mobile apps built with care.">
+  <meta property="og:title" content="PahalSoft — Focused Apps for Your Phone and Your Desktop">
+  <meta property="og:description" content="Clean, thoughtful apps for Android, iOS and Ubuntu, built with care.">
   <meta property="og:image" content="https://pahalsoft.com/assets/logo-invert.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pahalsoft.com">
@@ -45,7 +45,8 @@
     </button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto gap-lg-3">
-        <li class="nav-item"><a class="nav-link" href="#apps">Apps</a></li>
+        <li class="nav-item"><a class="nav-link" href="#mobile">Mobile</a></li>
+        <li class="nav-item"><a class="nav-link" href="#desktop">Desktop</a></li>
         <li class="nav-item"><a class="nav-link" href="#blog">Updates</a></li>
         <li class="nav-item">
           <button id="themeToggle" class="btn btn-sm btn-outline-light rounded-pill px-3">☀️</button>
@@ -60,13 +61,15 @@
   <div class="container" data-aos="fade-up">
     <div class="row align-items-center g-5">
       <div class="col-lg-6">
-        <span class="home-badge">Indie App Studio</span>
-        <h1 class="home-title mt-3">Mobile apps crafted for calm, clarity, and daily momentum.</h1>
+        <span class="home-badge">Indie Software Studio</span>
+        <h1 class="home-title mt-3">Focused apps for your phone and your desktop.</h1>
         <p class="home-subtitle mt-3">
-          We design and build focused mobile experiences that remove noise, respect time, and help people get things done.
+          We design and build calm, single-purpose software — mobile apps for Android and iOS,
+          and desktop apps for Ubuntu — that remove noise, respect your time and keep your data on your device.
         </p>
         <div class="home-cta d-flex flex-wrap gap-3 mt-4">
           <a href="#apps" class="btn btn-light btn-lg rounded-pill px-4">Explore Apps</a>
+          <a href="apps/spruce" class="btn btn-outline-light btn-lg rounded-pill px-4">New: Spruce for Ubuntu</a>
           <!-- <a href="mailto:lokeshpahal@gmail.com" class="btn btn-outline-light btn-lg rounded-pill px-4">Contact</a> -->
         </div>
         <div class="home-metrics d-flex flex-wrap gap-4 mt-4">
@@ -75,8 +78,8 @@
             <span>Single-purpose experiences</span>
           </div>
           <div>
-            <strong>Reliable</strong>
-            <span>Clean, maintainable builds</span>
+            <strong>Private</strong>
+            <span>Your data stays with you</span>
           </div>
           <div>
             <strong>Human</strong>
@@ -87,21 +90,27 @@
       <div class="col-lg-6">
         <div class="home-hero-card">
           <div class="home-hero-card-header">
-            <span>Studio Snapshot</span>
+            <span>What we make</span>
             <span class="home-pill">Since 2026</span>
           </div>
           <div class="home-hero-card-body">
+            <a class="home-hero-item home-platform" href="#mobile">
+              <span class="home-platform-icon" aria-hidden="true">📱</span>
+              <div>
+                <h5>Mobile <small>Android · iOS</small></h5>
+                <p>MyMoneyWiz, Wheel of Words, AppLocker and Timisha: money, words, privacy and photos, each doing one job well.</p>
+              </div>
+            </a>
+            <a class="home-hero-item home-platform" href="#desktop">
+              <span class="home-platform-icon" aria-hidden="true">🖥️</span>
+              <div>
+                <h5>Desktop <small>Ubuntu</small></h5>
+                <p>Spruce keeps Ubuntu clean, fast and safe. A native GNOME app, free and open source.</p>
+              </div>
+            </a>
             <div class="home-hero-item">
-              <h5>Product-first planning</h5>
-              <p>Every app begins with a crisp problem statement and a measurable outcome.</p>
-            </div>
-            <div class="home-hero-item">
-              <h5>Design with restraint</h5>
-              <p>We value whitespace, rhythm, and visual clarity over clutter.</p>
-            </div>
-            <div class="home-hero-item">
-              <h5>Launch-ready polish</h5>
-              <p>From onboarding to retention, we craft a consistent experience.</p>
+              <h5>One standard for both</h5>
+              <p>Small, focused apps, no tracking, and nothing done to your data without your say-so.</p>
             </div>
           </div>
         </div>
@@ -116,9 +125,20 @@
     <div class="text-center mb-5" data-aos="fade-up">
       <span class="home-section-kicker">Products</span>
       <h2 class="fw-bold mt-2">Our Apps</h2>
-      <p class="mt-2">Purpose-built tools designed for clarity and speed.</p>
+      <p class="mt-2">Purpose-built tools for the phone in your pocket and the computer on your desk.</p>
     </div>
-    <div id="appsContainer" class="row g-4 justify-content-center"></div>
+
+    <div id="mobile" class="home-platform-head">
+      <h3 class="fw-semibold mb-1">📱 Mobile</h3>
+      <p class="mb-0">For Android and iOS.</p>
+    </div>
+    <div id="mobileApps" class="row g-4 justify-content-center"></div>
+
+    <div id="desktop" class="home-platform-head mt-6">
+      <h3 class="fw-semibold mb-1">🖥️ Desktop</h3>
+      <p class="mb-0">For Ubuntu and GNOME.</p>
+    </div>
+    <div id="desktopApps" class="row g-4 justify-content-center"></div>
   </div>
 </section>
 
@@ -129,7 +149,7 @@
         <span class="home-section-kicker">Approach</span>
         <h2 class="fw-bold mt-2">A professional studio, sized for care.</h2>
         <p class="mt-3">
-          We focus on building a small number of products exceptionally well, obsessing over the details that make daily use feel effortless.
+          We focus on building a small number of products exceptionally well — on mobile and on the desktop — obsessing over the details that make daily use feel effortless.
         </p>
       </div>
       <div class="col-lg-7">
@@ -139,8 +159,8 @@
             <p>We define the core job-to-be-done before any pixels are placed.</p>
           </div>
           <div class="home-feature-card">
-            <h5>Design systems</h5>
-            <p>Reusable components and elegant spacing keep every view consistent.</p>
+            <h5>At home on each platform</h5>
+            <p>Phone apps that feel right on Android and iOS, and desktop apps that follow GNOME’s own design.</p>
           </div>
           <div class="home-feature-card">
             <h5>Quality focus</h5>
