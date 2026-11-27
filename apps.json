@@ -99,7 +99,7 @@
     "name": "Spruce",
     "url": "/apps/spruce",
     "tagline": "A cleaner that asks before it deletes",
-    "description": "Keep Ubuntu clean, fast and safe: junk cleanup, a disk-space map, a complete uninstaller, every update in one place and security checks — free. Spruce Pro adds duplicates, similar photos, performance and cloud tools for $24 once.",
+    "description": "Keep Ubuntu clean, fast and safe: junk cleanup, a disk-space map, duplicates and similar photos, a complete uninstaller, every update in one place, performance and security checks. Free and open source.",
     "theme": [
       "#3fb77a",
       "#1f7a4f"
@@ -107,7 +107,7 @@
     "features": [
       "Ten tools in one native window",
       "Your files go to the Trash, never straight to deletion",
-      "Free, with Spruce Pro for $24 once",
+      "Free and open source, nothing locked",
       "No account, nothing sent to us"
     ],
     "store": {},
