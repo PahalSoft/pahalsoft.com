@@ -893,3 +893,155 @@ footer {
   --mmw-shadow: 0 12px 24px rgba(43, 30, 12, 0.08);
   --mmw-pill-bg: rgba(43, 30, 12, 0.07);
 }
+
+/* ---------------------------------------------------------------------------
+   Spruce
+   ---------------------------------------------------------------------------
+   Palette only, like Wheel of Words: forest green from the app icon. The page
+   uses `class="mmw-page spruce-page"`. Spruce is a desktop app, so it also gets
+   a few rules for wide window screenshots (the phone apps show icons instead).
+   -------------------------------------------------------------------------- */
+.spruce-page {
+  --mmw-ink: #e8f3ec;
+  --mmw-ink-soft: #b5cbbd;
+  --mmw-accent: #3fb77a;
+  --mmw-accent-dark: #2a8f5b;
+  --mmw-bg: #08100c;
+  --mmw-card: rgba(14, 26, 20, 0.9);
+  --mmw-border: rgba(232, 243, 236, 0.09);
+  --mmw-surface: #0c1611;
+  --mmw-gradient: radial-gradient(1200px 600px at 15% 10%, rgba(63, 183, 122, 0.2) 0%, #08100c 55%, #060a08 100%);
+  --mmw-shadow: 0 12px 24px rgba(3, 8, 5, 0.5);
+  --mmw-pill-bg: rgba(232, 243, 236, 0.08);
+}
+
+[data-bs-theme="light"] .spruce-page {
+  --mmw-ink: #10261a;
+  --mmw-ink-soft: #33503f;
+  --mmw-accent: #1f7a4f;
+  --mmw-accent-dark: #175c3b;
+  --mmw-bg: #f4faf6;
+  --mmw-card: #ffffff;
+  --mmw-border: rgba(16, 38, 26, 0.1);
+  --mmw-surface: #ffffff;
+  --mmw-gradient: radial-gradient(1200px 600px at 15% 10%, #dff2e7 0%, #f4faf6 55%, #ffffff 100%);
+  --mmw-shadow: 0 12px 24px rgba(16, 38, 26, 0.08);
+  --mmw-pill-bg: rgba(16, 38, 26, 0.07);
+}
+
+.spruce-page .mmw-hero .badge {
+  background: rgba(63, 183, 122, 0.12);
+  color: var(--mmw-accent);
+  border-color: rgba(63, 183, 122, 0.3);
+}
+
+.spruce-page .sp-icon {
+  width: 88px;
+  height: 88px;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.35));
+}
+
+/* a desktop screenshot in a quiet frame */
+.spruce-page .sp-window {
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--mmw-border);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+  background: #1e1e1e;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.spruce-page a.sp-window:hover {
+  transform: translateY(-4px);
+  border-color: var(--mmw-accent);
+}
+
+.spruce-page .sp-window img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.spruce-page .sp-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.75rem;
+}
+
+.spruce-page .sp-gallery figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--mmw-ink-soft);
+}
+
+.spruce-page .sp-feature-num {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--mmw-accent);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+}
+
+.spruce-page .mmw-feature ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.spruce-page .mmw-feature li {
+  color: var(--mmw-ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin-bottom: 0.35rem;
+}
+
+.spruce-page .sp-flow {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  gap: 0.6rem;
+}
+
+.spruce-page .sp-flow-node {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  background: var(--mmw-card);
+  border: 1px solid var(--mmw-border);
+}
+
+.spruce-page .sp-flow-node.is-root { border-color: var(--mmw-accent); }
+
+.spruce-page .sp-flow-node small {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--mmw-accent);
+}
+
+.spruce-page .sp-flow-node strong { display: block; color: var(--mmw-ink); }
+.spruce-page .sp-flow-node span { font-size: 0.85rem; color: var(--mmw-ink-soft); }
+
+.spruce-page .sp-arrow {
+  align-self: center;
+  color: var(--mmw-ink-soft);
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .spruce-page .sp-arrow { display: none; }
+  .spruce-page .sp-flow { flex-wrap: wrap; }
+  .spruce-page .sp-flow-node { flex-basis: 100%; }
+}
+
+/* Ten features: two columns fill five even rows (four columns would leave a half row). */
+.spruce-page #features .mmw-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 768px) {
+  .spruce-page #features .mmw-grid { grid-template-columns: 1fr; }
+}
