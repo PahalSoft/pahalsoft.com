@@ -93,5 +93,28 @@
     "screenshots": [
       "assets/timisha/icon-512.png"
     ]
+  },
+  {
+    "id": "spruce",
+    "name": "Spruce",
+    "url": "/apps/spruce",
+    "tagline": "A cleaner that asks before it deletes",
+    "description": "Keep Ubuntu clean, fast and safe: junk cleanup, a disk-space map, duplicates and similar photos, a complete uninstaller, every update in one place, plus performance and security checks. Nothing is deleted without your yes.",
+    "theme": [
+      "#3fb77a",
+      "#1f7a4f"
+    ],
+    "features": [
+      "Ten tools in one native window",
+      "Your files go to the Trash, never straight to deletion",
+      "Packages, Snaps, Flatpaks and firmware updates together",
+      "No account, nothing sent to us"
+    ],
+    "store": {},
+    "screenshots": [
+      "assets/spruce/smart-scan.webp",
+      "assets/spruce/space-map.webp",
+      "assets/spruce/cleanup.webp"
+    ]
   }
 ]

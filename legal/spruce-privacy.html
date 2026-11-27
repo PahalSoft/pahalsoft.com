@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spruce – Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Spruce. No account, no analytics, nothing sent to PahalSoft. Everything it stores stays on your own computer.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="mmw-page spruce-page">
+
+<div class="container py-5">
+  <h1 class="fw-bold mb-4">Privacy Policy</h1>
+  <p class="text-muted">Spruce · Last updated: 27 November 2026</p>
+
+  <p>
+    Spruce is made by PahalSoft (“we”, “our”, “us”). It is a desktop app that looks after an
+    Ubuntu computer, which means it reads a lot about that computer. This policy explains what
+    it reads, what it keeps, where anything goes — and that none of it comes to us.
+  </p>
+
+  <h4 class="mt-4">1. The short version</h4>
+  <p>
+    Spruce sends nothing to PahalSoft. There is no account, no analytics, no crash reporting,
+    no advertising and no server of ours for anything to go to. What Spruce learns about your
+    computer is shown to you, on your computer, and that is the end of it.
+  </p>
+
+  <h4 class="mt-4">2. What Spruce reads on your computer</h4>
+  <p>
+    To do its job, Spruce reads, only when you use the matching feature:
+  </p>
+  <ul>
+    <li><strong>File and folder sizes</strong> — for Cleanup, Space Map and My Files.</li>
+    <li><strong>File contents, to compare them</strong> — Duplicates compares file contents, and Similar Photos makes a small fingerprint of each picture. Neither leaves your computer.</li>
+    <li><strong>Installed apps and available updates</strong> — from Ubuntu’s package system, Snap and Flatpak.</li>
+    <li><strong>Running programs, memory and processor use</strong> — for Performance.</li>
+    <li><strong>Security settings</strong> — such as whether the firewall is on — for Protection.</li>
+    <li><strong>File names and sizes in your cloud storage</strong> — only if you open the Cloud page, and only through accounts you connected yourself.</li>
+  </ul>
+
+  <h4 class="mt-4">3. What Spruce stores, and where</h4>
+  <p>Everything stays in your own home folder:</p>
+  <ul>
+    <li><strong>A history of cleanups</strong> — what was cleaned and how much space it freed — in <code>~/.local/state/spruce/</code>.</li>
+    <li><strong>The result of the last weekly check</strong>, if you turned the weekly check on, in the same folder.</li>
+    <li><strong>Photo fingerprints</strong>, so that later Similar Photos scans are quick, in <code>~/.cache/spruce/</code>.</li>
+    <li><strong>Quarantined files</strong>, if the virus scanner found something and you chose to quarantine it, in <code>~/.local/share/spruce/quarantine/</code>, locked so they cannot be opened.</li>
+  </ul>
+
+  <h4 class="mt-4">4. Connections Spruce causes — none of them to us</h4>
+  <p>
+    Spruce itself does not connect to the internet. Some features do ask Ubuntu’s own tools to
+    do something that involves a connection, exactly as if you had used those tools yourself:
+  </p>
+  <ul>
+    <li><strong>Updates</strong> — Ubuntu’s package system, Snap, Flatpak and the firmware updater contact their usual update servers (for example Ubuntu’s archive, the Snap Store, Flathub and the Linux Vendor Firmware Service).</li>
+    <li><strong>Virus definitions</strong> — if you install ClamAV, its own updater downloads virus definitions from ClamAV’s servers.</li>
+    <li><strong>Cloud</strong> — the Cloud page reads file lists from Google Drive or OneDrive through the accounts you connected in Ubuntu’s Online Accounts, or through rclone if you set it up.</li>
+  </ul>
+  <p>
+    Those services have their own privacy policies. Spruce adds nothing to these connections
+    and receives nothing from them that is sent on to anyone.
+  </p>
+
+  <h4 class="mt-4">5. Administrator access</h4>
+  <p>
+    Some tasks need administrator rights, so Spruce asks for your password through Ubuntu’s
+    standard password dialog. Your password goes to Ubuntu, not to Spruce: Spruce never sees
+    it and never stores it. What then runs with those rights is a separate helper that can only
+    perform a fixed list of named actions.
+  </p>
+
+  <h4 class="mt-4">6. Data sharing</h4>
+  <p>
+    None. There is nobody to share with: no analytics provider, no advertising network, no
+    cloud storage of ours and no crash reporting service.
+  </p>
+
+  <h4 class="mt-4">7. Children</h4>
+  <p>
+    Spruce is not directed at children, and collects no data from anyone — including children.
+  </p>
+
+  <h4 class="mt-4">8. How to verify this</h4>
+  <p>
+    Spruce is free software under the GNU GPL, so its behaviour can be checked rather than
+    taken on trust. You can also watch it yourself: everything it stores is in the folders
+    listed in section 3, and a network monitor will show that the app makes no connections of
+    its own.
+  </p>
+
+  <h4 class="mt-4">9. Deleting your data</h4>
+  <p>
+    Uninstalling Spruce removes the app. To remove what it stored, delete these folders from
+    your home folder: <code>~/.local/state/spruce</code>, <code>~/.cache/spruce</code> and
+    <code>~/.local/share/spruce</code>. Check the quarantine folder first if you might want to
+    restore anything from it. There is no copy anywhere else.
+  </p>
+
+  <h4 class="mt-4">10. Changes to this policy</h4>
+  <p>
+    If this policy ever changes, it will be because the app changed. The statements above
+    must remain literally true — a change that would make any of them false does not ship.
+    Updates are posted on this page with a new date at the top.
+  </p>
+
+  <h4 class="mt-4">11. Contact us</h4>
+  <p>
+    Questions about this policy:
+    <br>
+    <strong>Email:</strong> lokeshpahal@gmail.com
+  </p>
+
+  <hr class="my-5">
+  <p class="text-muted small">
+    © 2026 PahalSoft. All rights reserved.
+  </p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="../script.js"></script>
+
+</body>
+</html>

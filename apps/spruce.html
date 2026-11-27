@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spruce — A Cleaner for Ubuntu That Asks Before It Deletes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+        content="Spruce keeps Ubuntu clean, fast and safe: junk cleanup, a disk-space map, duplicate and similar-photo finding, a complete uninstaller, all updates in one place, performance and security checks. Nothing is deleted without your yes.">
+
+  <meta property="og:title" content="Spruce — A Cleaner for Ubuntu That Asks Before It Deletes">
+  <meta property="og:description" content="Ten tools in one native window: cleanup, disk map, duplicates, uninstaller, updates, performance, security and virus scanning. Your files go to the Trash, never straight to deletion.">
+  <meta property="og:image" content="https://pahalsoft.com/assets/spruce/icon-512.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="mmw-page spruce-page">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="/">
+      <img src="/assets/logo-invert.png" alt="PahalSoft" height="50">
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="../#apps">Apps</a></li>
+          <li class="nav-item"><a class="nav-link" href="../#blog">Updates</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="btn btn-sm btn-outline-light rounded-pill px-3">☀️</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="mmw-hero">
+    <div class="container" data-aos="fade-up">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <img src="../assets/spruce/icon.svg" class="sp-icon mb-3" alt="Spruce app icon — a white spruce tree with a small sparkle, on a green tile">
+          <div><span class="badge rounded-pill mb-3">For Ubuntu desktops</span></div>
+          <h1 class="mmw-title fw-bold">A cleaner that asks before it deletes.</h1>
+          <p class="mmw-subtitle mt-3">
+            Spruce finds the junk that piles up on an Ubuntu computer, shows you exactly what
+            fills your drive, removes apps without leaving a trace, keeps every kind of software
+            up to date, and checks your security settings. Ten tools in one window — and
+            nothing is ever deleted until you have seen it and said yes.
+          </p>
+          <div class="mmw-cta d-flex flex-wrap gap-3 mt-4">
+            <a class="btn btn-primary" href="#features">What it does</a>
+            <a class="btn btn-outline-dark" href="#screens">See it</a>
+          </div>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <span class="mmw-pill">Ubuntu 24.04 or newer</span>
+            <span class="mmw-pill">Native GNOME app</span>
+            <span class="mmw-pill">Free software, GPL-3.0</span>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="sp-window">
+            <img src="../assets/spruce/smart-scan.webp" width="1024" height="760"
+                 alt="Spruce Smart Scan: the drive bar, 9.8 GB that can be freed, and links to 89 updates and 3 security issues">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mmw-metrics py-4">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <strong>10 tools, one window</strong>
+          <span class="text-muted">From junk cleanup to virus scanning, without five separate utilities</span>
+        </div>
+        <div class="col-md-4">
+          <strong>Nothing without a yes</strong>
+          <span class="text-muted">Every clean, uninstall and update is shown first and waits for you</span>
+        </div>
+        <div class="col-md-4">
+          <strong>0 bytes sent to us</strong>
+          <span class="text-muted">No account, no analytics, no tracking of any kind</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="py-6">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-semibold">Everything in one window.</h2>
+        <p class="text-muted mt-3 mx-auto" style="max-width:640px">
+          Smart Scan checks all of it with one button. Each tool also has its own page in the
+          sidebar for when you want the details.
+        </p>
+      </div>
+      <div class="mmw-grid">
+        <div class="mmw-feature">
+          <span class="sp-feature-num">01</span>
+          <h5>Smart Scan</h5>
+          <p class="text-muted mb-0">One button measures junk, available updates and security issues, and tells you what is worth doing.</p>
+          <ul>
+            <li>“Clean recommended” only touches items that are always safe</li>
+            <li>Drive usage at a glance before and after</li>
+          </ul>
+        </div>
+        <div class="mmw-feature">
+          <span class="sp-feature-num">02</span>
+          <h5>Cleanup</h5>
+          <p class="text-muted mb-0">Every cleanable item, with its size and a plain-English line about what it is.</p>
+          <ul>
+            <li>Caches, thumbnails, logs, crash reports, old Snap versions, unused Docker images, leftover packages</li>
+            <li>npm, pip and Gradle downloads for developers</li>
+            <li>Browser caches stay locked until the browser is closed</li>
+          </ul>
+        </div>
+        <div class="mmw-feature">
+          <span class="sp-feature-num">03</span>
+          <h5>Space Map</h5>
+          <p class="text-muted mb-0">A clickable map of your home folder, the whole drive, or any folder you choose.</p>
+          <ul>
+            <li>Big folders are big tiles — click one to look inside</li>
+            <li>Stays on one drive and groups small files, so even huge folders stay readable</li>
+          </ul>
+        </div>
+        <div class="mmw-feature">
+          <span class="sp-feature-num">04</span>
+          <h5>My Files</h5>
+          <p class="text-muted mb-0">The files you forgot about, and the copies you did not know you had.</p>
+          <ul>
+            <li>Large and old files, by size and by how long since you opened them</li>
+            <li>Exact duplicates, compared by content rather than name</li>
+            <li>Similar photos — resized or re-saved copies — with the sharpest one kept</li>
+          </ul>
+        </div>
+        <div class="mmw-feature">
+          <span class="sp-feature-num">05</span>
+          <h5>Applications</h5>
+          <p class="text-muted mb-0">Uninstall apps completely, and tidy up after apps that are already gone.</p>
+          <ul>
+            <li>Ubuntu packages, Snaps and Flatpaks in one list, with sizes</li>
+            <li>Shows exactly what goes with an app before anything is removed</li>
+            <li>Leftover caches are ticked; your settings and profiles are not</li>
+          </ul>
+        </div>
+        <div class="mmw-feature">
+          <span class="sp-feature-num">06</span>
+          <h5>Updates</h5>
+          <p class="text-muted mb-0">Ubuntu packages, Snaps, Flatpaks and device firmware, all in one list.</p>
+          <ul>
+            <li>Update one source or everything at once</li>
+            <li>Firmware is handed to Ubuntu’s own Firmware Updater</li>
+          </ul>
+        </div>
+        <div class="mmw-feature">
+          <span class="sp-feature-num">07</span>
+          <h5>Performance</h5>
+          <p class="text-muted mb-0">What is using your memory and processor, and why startup is slow.</p>
+          <ul>
+            <li>Running apps grouped by program, with Quit and Force Quit</li>
+            <li>Startup apps switched on or off, for you only</li>
+            <li>Startup time broken down by stage, with the slowest services named</li>
+          </ul>
+        </div>
+        <div class="mmw-feature">
+          <span class="sp-feature-num">08</span>
+          <h5>Protection</h5>
+          <p class="text-muted mb-0">Eleven security checks, and a virus scanner when you want one.</p>
+          <ul>
+            <li>Firewall, automatic security updates, screen lock, remote login, Livepatch, encryption, Secure Boot</li>
+            <li>One-click fixes only where a fix is safe</li>
+            <li>ClamAV scanning, with a locked quarantine you can restore from</li>
+          </ul>
+        </div>
+        <div class="mmw-feature">
+          <span class="sp-feature-num">09</span>
+          <h5>Cloud</h5>
+          <p class="text-muted mb-0">What fills your Google Drive or OneDrive, and which of it you also keep locally.</p>
+          <ul>
+            <li>Reads the accounts you connected in Ubuntu’s Online Accounts</li>
+            <li>Read-only: nothing in your cloud is ever changed</li>
+          </ul>
+        </div>
+        <div class="mmw-feature">
+          <span class="sp-feature-num">10</span>
+          <h5>Weekly check &amp; top-bar monitor</h5>
+          <p class="text-muted mb-0">Optional, and both off until you switch them on.</p>
+          <ul>
+            <li>A weekly check that only measures, and notifies you when something needs a look</li>
+            <li>Free space, memory and processor in the top bar, with a warning at 90% full</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="screens" class="py-6 mmw-surface">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-semibold">See it.</h2>
+        <p class="text-muted mt-3">Real screenshots. Click any of them to see it full size.</p>
+      </div>
+      <div class="sp-gallery">
+        <figure class="m-0">
+          <a class="sp-window" href="../assets/spruce/cleanup.webp" target="_blank" rel="noopener">
+            <img src="../assets/spruce/cleanup.webp" width="1024" height="760" loading="lazy" alt="Spruce Cleanup list with sizes and explanations for each item">
+          </a>
+          <figcaption>Cleanup — every item explained</figcaption>
+        </figure>
+        <figure class="m-0">
+          <a class="sp-window" href="../assets/spruce/space-map.webp" target="_blank" rel="noopener">
+            <img src="../assets/spruce/space-map.webp" width="1024" height="760" loading="lazy" alt="Spruce Space Map treemap of an example home folder">
+          </a>
+          <figcaption>Space Map — click a tile to look inside</figcaption>
+        </figure>
+        <figure class="m-0">
+          <a class="sp-window" href="../assets/spruce/applications.webp" target="_blank" rel="noopener">
+            <img src="../assets/spruce/applications.webp" width="1024" height="760" loading="lazy" alt="Spruce Applications list with app icons, sizes and Uninstall buttons">
+          </a>
+          <figcaption>Applications — packages, Snaps and Flatpaks together</figcaption>
+        </figure>
+        <figure class="m-0">
+          <a class="sp-window" href="../assets/spruce/updates.webp" target="_blank" rel="noopener">
+            <img src="../assets/spruce/updates.webp" width="1024" height="760" loading="lazy" alt="Spruce Updates page listing package and Snap updates">
+          </a>
+          <figcaption>Updates — every source in one list</figcaption>
+        </figure>
+        <figure class="m-0">
+          <a class="sp-window" href="../assets/spruce/boot.webp" target="_blank" rel="noopener">
+            <img src="../assets/spruce/boot.webp" width="1024" height="760" loading="lazy" alt="Spruce Boot and Maintenance view breaking down a 43.8 second startup">
+          </a>
+          <figcaption>Performance — where startup time goes</figcaption>
+        </figure>
+        <figure class="m-0">
+          <a class="sp-window" href="../assets/spruce/preferences.webp" target="_blank" rel="noopener">
+            <img src="../assets/spruce/preferences.webp" width="1024" height="760" loading="lazy" alt="Spruce Preferences with the weekly check and top-bar monitor switches">
+          </a>
+          <figcaption>Preferences — the weekly check and top-bar monitor</figcaption>
+        </figure>
+      </div>
+      <p class="text-muted small mt-4 mb-0">Space Map is shown with an example home folder.</p>
+    </div>
+  </section>
+
+  <section class="py-6">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <h2 class="fw-semibold">Careful is the whole point.</h2>
+          <p class="text-muted mt-3">
+            A cleaner earns trust by what it refuses to do. Spruce is built around a few rules
+            that are enforced in code, not left to good intentions.
+          </p>
+          <div class="mmw-steps mt-4">
+            <div class="mmw-step">
+              <div>
+                <h6 class="mb-1">You see it first</h6>
+                <p class="mb-0 text-muted">Every clean, uninstall and update lists what it will do and waits for a yes.</p>
+              </div>
+            </div>
+            <div class="mmw-step">
+              <div>
+                <h6 class="mb-1">Your files go to the Trash</h6>
+                <p class="mb-0 text-muted">Large files, duplicates, photos and leftovers are moved to the Trash, never deleted outright.</p>
+              </div>
+            </div>
+            <div class="mmw-step">
+              <div>
+                <h6 class="mb-1">One copy always stays</h6>
+                <p class="mb-0 text-muted">A group of duplicates or similar photos can never be emptied completely.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="mmw-grid">
+            <div class="mmw-feature">
+              <h5>Ubuntu’s own parts are off-limits</h5>
+              <p class="text-muted mb-0">Core packages like the desktop, the Files app and the kernel cannot be uninstalled, and an uninstall that would drag one of them along is refused.</p>
+            </div>
+            <div class="mmw-feature">
+              <h5>Settings are not caches</h5>
+              <p class="text-muted mb-0">When cleaning up after an app, its caches are pre-selected. Its profiles, logins and documents are not.</p>
+            </div>
+            <div class="mmw-feature">
+              <h5>Busy apps are left alone</h5>
+              <p class="text-muted mb-0">A browser’s cache is only offered once the browser is closed, so nothing is pulled out from under a running app.</p>
+            </div>
+            <div class="mmw-feature">
+              <h5>A record of what happened</h5>
+              <p class="text-muted mb-0">Every cleanup is written to a history log on your own computer, so you can always see what was removed and when.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-6 mmw-surface">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="fw-semibold">About that password prompt.</h2>
+          <p class="text-muted mt-3">
+            Some jobs — clearing system logs, removing old Snap versions, installing updates —
+            need administrator rights, so Spruce asks for your password. That request deserves
+            an explanation, because a cleaner with root access could do a lot of damage.
+          </p>
+          <p class="text-muted">
+            Spruce itself always runs as you. The system work is done by a small, separate helper
+            that is installed owned by the system and can only perform a fixed list of named
+            actions. It never accepts a file path or a command from the app, and it checks every
+            request again itself — so even a confused or compromised app could not talk it into
+            deleting something outside that list. Ubuntu’s own password dialog tells you it is
+            Spruce asking, and why.
+          </p>
+          <div class="sp-flow mt-4" aria-label="How Spruce asks for administrator rights">
+            <div class="sp-flow-node">
+              <small>You</small>
+              <strong>Spruce</strong>
+              <span>runs as your user</span>
+            </div>
+            <span class="sp-arrow" aria-hidden="true">→</span>
+            <div class="sp-flow-node">
+              <small>Ubuntu</small>
+              <strong>Password prompt</strong>
+              <span>says who is asking</span>
+            </div>
+            <span class="sp-arrow" aria-hidden="true">→</span>
+            <div class="sp-flow-node is-root">
+              <small>System</small>
+              <strong>Spruce helper</strong>
+              <span>fixed actions only</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mmw-card p-4 text-start">
+            <h5 class="fw-semibold">What Spruce does not do — and will not claim to</h5>
+            <p class="text-muted mb-2">
+              Cleaners have a reputation for promising magic. Spruce does not “boost RAM”,
+              defragment anything, or invent problems to scare you into clicking.
+            </p>
+            <p class="text-muted mb-2">
+              Its virus scanner is ClamAV, the standard open-source engine. On Linux it is most
+              useful for catching Windows and Office malware in files you download and might
+              pass on; it is not a reason to stop being careful.
+            </p>
+            <p class="text-muted mb-0">
+              Some security settings it can only report, not change: disk encryption needs a
+              reinstall, and Secure Boot lives in your computer’s firmware. Where a fix could
+              lock you out — like changing how remote login works — Spruce explains the change
+              instead of making it for you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-6">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-7">
+          <h2 class="fw-semibold">Getting Spruce.</h2>
+          <p class="text-muted mt-3">
+            Spruce runs on Ubuntu 24.04 or newer with the standard GNOME desktop, and installs
+            as a single package of about 60 KB — it uses only what Ubuntu already ships. It is
+            free software under the GNU GPL version 3.
+          </p>
+          <p class="text-muted">
+            It is not in a store yet. If you would like to try it, write to us and we will
+            send you a copy.
+          </p>
+          <div class="mmw-cta d-flex flex-wrap gap-3 mt-4">
+            <a class="btn btn-primary" href="mailto:lokeshpahal@gmail.com?subject=Spruce">Ask for a copy</a>
+            <a class="btn btn-outline-dark" href="../#apps">All our apps</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="mmw-card p-4 text-start">
+            <h5 class="fw-semibold">At a glance</h5>
+            <ul class="text-muted mb-0 ps-3">
+              <li>Ubuntu 24.04 or newer, GNOME</li>
+              <li>Native GTK 4 and libadwaita, light and dark</li>
+              <li>Ubuntu packages, Snap and Flatpak</li>
+              <li>No account and no analytics</li>
+              <li>Licence: GPL-3.0-or-later</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 mmw-footer">
+    <div>© 2026 PahalSoft</div>
+    <div class="d-flex justify-content-center gap-3 mt-2">
+      <a class="text-decoration-none" href="../legal/spruce-privacy.html">Privacy Policy</a>
+      <span aria-hidden="true">•</span>
+      <a class="text-decoration-none" href="../legal/spruce-terms.html">Terms of Service</a>
+    </div>
+  </footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="../script.js"></script>
+
+</body>
+</html>
