@@ -3,6 +3,11 @@
     "id": "mymoneywiz",
     "name": "MyMoneyWiz",
     "url": "/apps/mymoneywiz",
+    "platform": "mobile",
+    "platforms": [
+      "Android",
+      "iOS"
+    ],
     "tagline": "Managing finances as easy as pie",
     "description": "Record personal and business transactions, analyze spending reports, and manage assets effortlessly.",
     "theme": [
@@ -28,6 +33,11 @@
     "id": "wheelofwords",
     "name": "Wheel of Words",
     "url": "/apps/wheelofwords",
+    "platform": "mobile",
+    "platforms": [
+      "Android",
+      "iOS"
+    ],
     "tagline": "The word game that remembers what you forgot",
     "description": "Swipe letters around the wheel to fill the grid. Behind the puzzle, spaced repetition brings back the words you are closest to forgetting.",
     "theme": [
@@ -52,6 +62,10 @@
     "id": "applocker",
     "name": "App Locker",
     "url": "/apps/applocker",
+    "platform": "mobile",
+    "platforms": [
+      "Android"
+    ],
     "tagline": "Hand over your phone, not everything on it",
     "description": "Put a PIN or fingerprint in front of the apps you would rather other people did not open. No internet permission, so nothing can leave your device.",
     "theme": [
@@ -75,6 +89,10 @@
     "id": "timisha",
     "name": "Timisha",
     "url": "/apps/timisha",
+    "platform": "mobile",
+    "platforms": [
+      "Android"
+    ],
     "tagline": "Your photos never leave your phone",
     "description": "Edit photographs on the device itself. Masks, curves and full-resolution export, with your original file never changed.",
     "theme": [
@@ -98,6 +116,10 @@
     "id": "spruce",
     "name": "Spruce",
     "url": "/apps/spruce",
+    "platform": "desktop",
+    "platforms": [
+      "Ubuntu"
+    ],
     "tagline": "A cleaner that asks before it deletes",
     "description": "Keep Ubuntu clean, fast and safe: junk cleanup, a disk-space map, duplicates and similar photos, a complete uninstaller, every update in one place, performance and security checks. Free and open source.",
     "theme": [
@@ -115,6 +137,8 @@
       "assets/spruce/smart-scan.webp",
       "assets/spruce/space-map.webp",
       "assets/spruce/cleanup.webp"
-    ]
+    ],
+    "download": "https://github.com/PahalSoft/spruce/releases/download/v0.6.1/spruce_0.6.1_all.deb",
+    "price": "Free and open source"
   }
 ]

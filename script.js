@@ -52,23 +52,36 @@ function storeBadges(store) {
   return parts.join('');
 }
 
+// Ubuntu apps get a download button instead of store badges.
+function desktopBadge(app) {
+  if (!app.download) return '';
+  return `<a class="store-badge desktop-badge" href="${app.download}"><div class="badge-content"><svg viewBox="0 0 24 24" fill="currentColor" class="ubuntu-logo" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="4.6" r="2.1"/><circle cx="5.6" cy="15.7" r="2.1"/><circle cx="18.4" cy="15.7" r="2.1"/></svg><div class="badge-text"><span class="badge-subtitle">Download for</span><span class="badge-title">Ubuntu (.deb)</span></div></div></a>`;
+}
+
+function appCard(app) {
+  const chips = (app.platforms || []).map(p => `<span class="platform-chip">${p}</span>`).join('');
+  const price = app.price ? `<span class="platform-chip is-free">${app.price}</span>` : '';
+  const badges = app.platform === 'desktop' ? desktopBadge(app) : storeBadges(app.store);
+  return `
+    <div class="col-md-6 col-lg-6">
+      <div class="glow-hover p-4 h-100" data-aos="fade-up">
+        <div class="platform-chips">${chips}${price}</div>
+        <h5 class="fw-semibold">${app.name}</h5>
+        <p class="small">${app.description}</p>
+        <div class="store-badges">${badges}</div>
+        <a class="btn btn-sm btn-outline-primary rounded-pill mt-4" href="${app.url}">View App</a>
+      </div>
+    </div>`;
+}
+
 fetch('apps.json')
   .then(r => r.json())
   .then(apps => {
     window.apps = apps;
-    const c = document.getElementById('appsContainer');
-
+    const mobile = document.getElementById('mobileApps');
+    const desktop = document.getElementById('desktopApps');
     apps.forEach(app => {
-      c.innerHTML += `
-        <div class="col-md-6 col-lg-6">
-          <div class="glow-hover p-4 h-100" data-aos="fade-up">
-            <h5 class="fw-semibold">${app.name}</h5>
-            <p class="small">${app.description}</p>
-            <div class="store-badges">${storeBadges(app.store)}</div>
-            <a class="btn btn-sm btn-outline-primary rounded-pill mt-4"
-              href="${app.url}">View App</a>
-          </div>
-        </div>`;
+      (app.platform === 'desktop' ? desktop : mobile).innerHTML += appCard(app);
     });
   });
 

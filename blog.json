@@ -1,12 +1,17 @@
 [
-    {
-      "title": "Introducing MyMoneyWiz",
-      "date": "2026-01-05",
-      "summary": "Why we built MyMoneyWiz and how it helps people manage their finances."
-    },
-    {
-      "title": "Designing Calm Apps",
-      "date": "2025-12-20",
-      "summary": "Our approach to building apps that don’t overwhelm users."
-    }
-  ]
+  {
+    "title": "Spruce: our first desktop app",
+    "date": "2026-11-27",
+    "summary": "A free, open-source cleaner for Ubuntu that finds junk, maps your drive and checks your security — and never deletes anything you haven’t confirmed."
+  },
+  {
+    "title": "Introducing MyMoneyWiz",
+    "date": "2026-01-05",
+    "summary": "Why we built MyMoneyWiz and how it helps people manage their finances."
+  },
+  {
+    "title": "Designing Calm Apps",
+    "date": "2025-12-20",
+    "summary": "Our approach to building apps that don’t overwhelm users."
+  }
+]
