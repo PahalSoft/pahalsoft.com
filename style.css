@@ -1147,3 +1147,20 @@ footer {
 .store-badge.desktop-badge { background: #e95420; color: #fff; }
 .store-badge.desktop-badge:hover { background: #c7461b; color: #fff; transform: translateY(-2px); }
 .store-badge .ubuntu-logo { width: 28px; height: 28px; flex-shrink: 0; }
+
+/* Spruce: the two-line PPA install command */
+.spruce-page .sp-install {
+  max-width: 34rem;
+  margin: 0.25rem 0 1rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 14px;
+  background: var(--mmw-card);
+  border: 1px solid var(--mmw-border);
+  overflow-x: auto;
+}
+
+.spruce-page .sp-install code {
+  color: inherit;
+  font-size: 0.92rem;
+  white-space: pre;
+}
